@@ -1,0 +1,15 @@
+{
+  "name": "hgraph-example",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Sample server side query",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "got": "^12.1.0",
+    "ts-node": "^10.8.2"
+  },
+  "scripts": {
+    "example": "node index.js"
+  }
+}

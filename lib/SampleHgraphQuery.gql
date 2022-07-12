@@ -1,0 +1,15 @@
+#
+# Get most recent account balance for list an account.
+#
+
+query AccountBalance($accountId: bigint) {
+  account_balance(
+    order_by: {consensus_timestamp: desc}
+    where: {account_id: {_lte: $accountId}}
+    limit: 1
+  ) {
+    account_id
+    balance
+    consensus_timestamp
+  }
+}
