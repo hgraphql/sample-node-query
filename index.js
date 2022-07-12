@@ -20,6 +20,8 @@ async function main() {
     })
     .json()
 
+  console.log(authResponse)
+
   /*
    * hgraph query
    */
